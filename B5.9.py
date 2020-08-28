@@ -21,8 +21,9 @@ class Benchmark:
 
 # Для того чтоб получить ответ отличный от нуля лучше всего задавать максимально большое значение, например: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 max_element_of_list = input("Введите максимальный элемент для рассчета последовательности Фибоначи: ")
+count_of_repeat = input("Введите количество повторений: ")
 
-time_this = Benchmark(10)
+time_this = Benchmark(int(count_of_repeat))
 
 @time_this
 def CreateFibonachiList(maxElement):
